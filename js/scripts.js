@@ -23,10 +23,20 @@ $(document).ready(function() {
     
     var num = $("input#number").val();
     numHolder.push(parseInt(num))
-    if(num > 5) num = 5
-      for(let i = 0; i <= num; i++){
+    if(num > 50) num = 50
+    
+    for(let i = 0; i <= num; i++){
+      
+      if(i.toString().match(/3/)){
+        console.log('wont you be my neighbor')
+      }else if(i.toString().match(/2/)){
+        console.log('boop')
+      }else if(i.toString().match(/1/)){
+        console.log('beep')
+      }else{
         console.log(i)
       }
+    }
 
   });
 });
