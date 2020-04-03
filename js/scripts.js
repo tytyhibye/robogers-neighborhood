@@ -21,17 +21,19 @@ $(document).ready(function() {
     
     var num = $("input#number").val();
     // if(num > 50) num = 50
+    var result = ""
+    
     
     for(let i = 0; i <= num; i++){
       
       if(i.toString().includes(3)){
-        console.log('wont you be my neighbor')
+        return "Won't you be my neighbor";
       }else if(i.toString().includes(2)){
-        console.log('boop')
+        return"*boop*";
       }else if(i.toString().includes(1)){
-        console.log('beep')
+        return "*beep*";
       }else{
-        console.log(i)
+        return i;
       }
     }
 
