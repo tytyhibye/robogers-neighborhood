@@ -21,6 +21,9 @@ h1{
   background-color: rgba(250, 235, 215, 0.712);
   background-image: ur("http://www.thighswideshut.org/twsdo/wp-content/uploads/2012/11/mr-rogers-robot.jpg");
   background-repeat: no-repeat;
+  border-style: double;
+  border-width: 8px;
+  border-color: rgb(88, 42, 11);
 }
 #frame {
   border-style: double;
