@@ -6,11 +6,24 @@
 // apply logic for number 3 (wont you be my neighbor)
 
 // *Business Logic*
-
-
+var array = num.split(' ',',','.',':','?');
+  var beep = array.indexOf(1);
+  var boop = array.indexOf(2);
+  var neighbor = array.indexOf(3);
+  if (beep !== -1) {
+    array[beep] = "*beep*";
+  } else if (boop !== -1) {
+    array[boop] = "*boop*";
+  } else if (neighbor !== -1) {
+    array[neighbor] = "Won't you be my neighbor?"
+  }
 
 
 // *User Interface Logic*
 $(document).ready(function() {
-  $("form#numbers").submit()
-})
+  $("form#numbers").submit(function(event) {
+    event.preventDefault();
+  
+      var num = $("input#number").val();
+  });
+});
