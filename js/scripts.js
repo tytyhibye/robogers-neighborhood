@@ -8,30 +8,30 @@
 // display results of logic in user interface
 
 $(document).ready(function() {
-    
   var output = ''
-  var num = $("input#number").val();
+  let num
+  let stringHolder = []
   // if(num > 50) num = 50
   let translate = function() {
+    num = $("input#number").val();
     for(i = 0; i <= num; i++) {
       if(i.toString().includes(3)) {
-        console.log(i)
-        output = "Won't you be my neighbor";
-        console.log(output)
+       stringHolder.push("Won't you be my neighbor")
       }else if(i.toString().includes(2)) {
-        output = "*boop*";
+        stringHolder.push("*boop*")
       }else if(i.toString().includes(1)) {
-        output = "*beep*";
+        stringHolder.push("*beep*")
       }else {
-        output = i;
+        stringHolder.push(i);
       }
     }
+    console.log(stringHolder)
   }  
   
 
   $("#numbers").submit(function(event) {
     event.preventDefault();
     translate()
-    $("#output").text(output);
+    $("#output").text();
   });
 });
