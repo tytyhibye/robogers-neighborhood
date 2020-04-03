@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Mr.Roboger's Neighborhood</title>
@@ -16,7 +14,7 @@
       <form id="numbers">
         <div class="form-group">
           <label for="userInput">Let's see how high I can count, enter your favorite number.</label>
-          <input pattern="[0-9' ']+" oninvalid="setCustomValidity('I *beep* love your enthusiasm but *blorp* please enter a *boop* number, thank you.')" type="text" id="number">
+          <input type="text" id="number" pattern="[0-9' ']+" oninvalid="setCustomValidity('I *beep* love your enthusiasm but *blorp* please enter a *boop* number, thank you.')">
         </div>
         <br>
         <button type="submit" class="btn btn-primary">Submit</button>
@@ -25,6 +23,9 @@
       <div class="result">
         <p><span class="return"></span></p>
       </div>
-    </div>  
+    </div>
+    
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
