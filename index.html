@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Mr.Roboger's Neighborhood</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Mr.Roboger's Neighborhood</h1>
+      <h3>Won't you be my neighbor?</h3>
+      <form id="numbers">
+        <div class="form-group">
+          <label for="word">Let's talk, unfortunately I only speak numerically. Type in a number for a response.</label>
+          <input pattern="[0-9' ']+" oninvalid="setCustomValidity('Remember, I only understand numbers')" type="text" id="num">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br>
+      <div class="result">
+        <p><span class="return"></span></p>
+      </div>
+    </div>  
+  </body>
+</html>
