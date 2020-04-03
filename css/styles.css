@@ -3,6 +3,7 @@ background-image: url("https://www.heinzhistorycenter.org/wp-content/uploads/201
 background-size: cover;
 background-repeat: no-repeat;
 font-family: georgia;
+text-align: center;
 }
 .threed {
   color: #CCCCCC;
@@ -13,11 +14,11 @@ font-family: georgia;
            0 9px 10px rgba(0, 0, 0, 0.2);
 }
 h1{
-  letter-spacing: -3px;
+  letter-spacing: -1px;
   text-transform: uppercase;
 }
 .jumbotron{
-  background-color: rgba(250, 235, 215, 0.562);
+  background-color: rgba(250, 235, 215, 0.712);
   background-image: ur("http://www.thighswideshut.org/twsdo/wp-content/uploads/2012/11/mr-rogers-robot.jpg");
   background-repeat: no-repeat;
 }

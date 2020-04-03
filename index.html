@@ -10,19 +10,27 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-      <div class="threed"><h1>Welcome to Mr.Roboger's Neighborhood</h1></div>
-      <h3>Won't you <span id="beepboop">*beep*</span> my neighbor?</h3>
-      <form id="numbers">
-        <div class="form-group">
-          <label for="userInput"><h3>Let's see how high I can count, enter your favorite number.</h3></label>
-          <input type="text" id="number" pattern="[0-9' ']+" oninvalid="setCustomValidity('I *beep* love your enthusiasm but *blorp* please refresh and *boop* enter a number, thank you.')">
+        <div class="container">
+          <div class="col-sm-6">
+          <img src="http://www.thighswideshut.org/twsdo/wp-content/uploads/2012/11/mr-rogers-robot.jpg" class="img-responsive">
+          </div>
+          <div class="col-sm-6">
+            <div class="threed"><h1>Welcome to Mr.Roboger's Neighborhood</h1>
+            </div>
+            <h2>Won't you <span id="beepboop">*beep*</span> my neighbor?</h3>
+            <form id="numbers">
+              <div class="form-group">
+                <label for="userInput"><h3>Let's see how high I can count, enter your favorite number.</h3></label>
+                <input type="text" id="number" pattern="[0-9' ']+" oninvalid="setCustomValidity('I *beep* love your enthusiasm but *blorp* please REFRESH and *boop* enter a number, thank you.')">
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br>
+            <div id="output" style="height:auto; width:auto; background-color: rgb(207, 248, 235); font-family: geordia; font-size: large;" type="text">
+            </div>
+          </div>
         </div>
-        <br>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-      <br>
-      <div id="output" style="height:auto; width:auto" type="text">
-       </div>
       </div>
     </div>
     
