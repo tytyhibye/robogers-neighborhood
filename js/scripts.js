@@ -16,22 +16,19 @@
  
 // *User Interface Logic*
 $(document).ready(function() {
-  var sounds =["*beep*","*boop*","won't you be my neighbor?"];
-  let numHolder = []
   $("form#numbers").submit(function(event) {
     event.preventDefault();
     
     var num = $("input#number").val();
-    numHolder.push(parseInt(num))
-    if(num > 50) num = 50
+    // if(num > 50) num = 50
     
     for(let i = 0; i <= num; i++){
       
-      if(i.toString().match(/3/)){
+      if(i.toString().includes(3)){
         console.log('wont you be my neighbor')
-      }else if(i.toString().match(/2/)){
+      }else if(i.toString().includes(2)){
         console.log('boop')
-      }else if(i.toString().match(/1/)){
+      }else if(i.toString().includes(1)){
         console.log('beep')
       }else{
         console.log(i)
