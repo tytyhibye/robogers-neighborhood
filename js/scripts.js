@@ -7,17 +7,26 @@
 
 // *Business Logic*
 var array = num.split(' ',',','.',':','?');
-  var beep = array.indexOf(1);
-  var boop = array.indexOf(2);
-  var neighbor = array.indexOf(3);
-  if (beep !== -1) {
-    array[beep] = "*beep*";
-  } else if (boop !== -1) {
-    array[boop] = "*boop*";
-  } else if (neighbor !== -1) {
-    array[neighbor] = "Won't you be my neighbor?"
+var sounds =["*beep*","*boop*","won't you be my neighbor?"];
+  function translate(num) {
+    if(num === 0) {
+      return ""
+    }
+    for(i=0; i < array.length; i ++) {
+      if(num <=[i][0]) {
+        return sounds[i][0];
+      }
+    }
   }
-
+  console.log()
+  // array.map(function(num) {
+  //   if (num >= 1){
+  //     replace("*beep*")
+  //   } else if (num === 2){
+  //     replace("*boop*")
+  //   } else if (num === 3){
+  //     replace("won't you be my neighbor?")
+  //   }
 
 // *User Interface Logic*
 $(document).ready(function() {
