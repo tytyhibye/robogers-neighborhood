@@ -8,31 +8,27 @@
 // display results of logic in user interface
 
 // Business Logic:
-$(document).ready(function() {
-  var output = ''
-  let num
-  let stringHolder = []
-  // if(num > 50) num = 50
-  let translate = function() {
-    num = $("input#number").val();
-    for(i = 0; i <= num; i++) {
-      if(i.toString().includes(3)) {
-       stringHolder.push("won't you be my neighbor")
-      }else if(i.toString().includes(2)) {
-        stringHolder.push("*boop*")
-      }else if(i.toString().includes(1)) {
-        stringHolder.push("*beep*")
-      }else {
-        stringHolder.push(i);
-      }
+let stringHolder = []
+// if(num > 50) num = 50
+let translate = function() {
+  let num = $("input#number").val();
+  for(i = 0; i <= num; i++) {
+    if(i.toString().includes(3)) {
+      stringHolder.push("won't you be my neighbor")
+    }else if(i.toString().includes(2)) {
+      stringHolder.push("*boop*")
+    }else if(i.toString().includes(1)) {
+      stringHolder.push("*beep*")
+    }else {
+      stringHolder.push(i);
     }
-  }  
-  
+  }
+  return stringHolder
+}
+
 // User Interface Logic:
-  $("#numbers").submit(function(event) {
-    event.preventDefault();
-    translate()
-    $("#output").text(stringHolder.toString());
-    stringHolder = []
-  });
+$("#numbers").submit(function(event) {
+  event.preventDefault();
+  $("#output").text(translate().toString());
+  stringHolder = []
 });

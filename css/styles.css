@@ -12,6 +12,7 @@ text-align: center;
            0 5px 0 #555555, 0 6px 0 #444444,
            0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
            0 9px 10px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
 }
 h1{
   letter-spacing: -1px;
