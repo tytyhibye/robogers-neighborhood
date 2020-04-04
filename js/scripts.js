@@ -9,7 +9,6 @@
 
 // Business Logic:
 let stringHolder = []
-// if(num > 50) num = 50
 let translate = function() {
   let num = $("input#number").val();
   for(i = 0; i <= num; i++) {
@@ -29,6 +28,7 @@ let translate = function() {
 // User Interface Logic:
 $("#numbers").submit(function(event) {
   event.preventDefault();
+  let hold = $("input#number").val();
   $("#output").text(translate().toString());
   stringHolder = []
 });

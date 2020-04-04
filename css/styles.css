@@ -48,5 +48,7 @@ button {
 }
 #output {
   text-align: auto;
-  padding: 10%;
+  height: 10px;
+  padding: 10%; 
+  word-wrap: break-word;
 }
