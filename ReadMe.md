@@ -19,10 +19,10 @@ A website that takes user inputted integers and returns a string of numbers coun
 
 ## Setup/Installation Requirements
 
-Enter the url "[https://tytyhibye.github.io/robogers-neighborhood/](https://tytyhibye.github.io/project-suggester/)" into your browser.
+Enter the url "[https://tytyhibye.github.io/robogers-neighborhood/]" into your browser.
 
 For additional information on this project, you can:
-* _clone repository from_ [https://github.com/tytyhibye/robogers-neighborhood/](https://github.com/tytyhibye/project-suggester)
+* _clone repository from_ [https://github.com/tytyhibye/robogers-neighborhood/]
 * _find in directory_
 * _open index in local server_
 * _enjoy_
